@@ -38,11 +38,11 @@ class DialogueCharacterEditorState extends MusicBeatState
 	var daText:Alphabet = null;
 
 	private static var TIP_TEXT_MAIN:String =
-	'JKLI - Move camera (Hold Shift to move 4x faster)
-	\nQ/E - Zoom out/in
-	\nR - Reset Camera
-	\nH - Toggle Speech Bubble
-	\nSpace - Reset text';
+	'JKLI - Mover camera (Aperte Shift para mover 4 vezes mais rapido)
+	\nQ/E - Zoom
+	\nR - Resetar Camera
+	\nH - Alternar balao de fala
+	\nSpace - Resetar texto';
 
 	private static var TIP_TEXT_OFFSET:String =
 	'JKLI - Move camera (Hold Shift to move 4x faster)
