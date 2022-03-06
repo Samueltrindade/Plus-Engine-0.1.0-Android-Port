@@ -139,13 +139,13 @@ class CharacterEditorState extends MusicBeatState
 		add(camFollow);
 
 		var tipText:FlxText = new FlxText(FlxG.width - 20, FlxG.height, 0,
-			"E/Q - Camera Zoom In/Out
-			\nJKLI - Move Camera
+			"E/Q - Zoom da camera
+			\nJKLI - Mover a camera
 			
-			\nW/S - Previous/Next Animation
-			\nSpace - Play Animation
-			\nArrow Keys - Move Character Offset
-			\nHold Shift to Move 10x faster\n", 12);
+			\nW/S - Animacao anterior/posterior
+			\nEspaco - Testar animacao
+			\nBotoes de seta - Mover o offset dos personagens
+			\nAperte Shift para Mover 10 vezes mais rapido\n", 12);
 		tipText.cameras = [camHUD];
 		tipText.setFormat(null, 12, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		tipText.scrollFactor.set();
