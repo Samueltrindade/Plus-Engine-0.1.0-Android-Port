@@ -38,7 +38,7 @@ class CustomControlsState extends MusicBeatSubstate
 	var leftArrow:FlxSprite;
 	var rightArrow:FlxSprite;
 							//'hitbox',
-	var controlitems:Array<String> = ['right control', 'left control','keyboard','custom', 'hitbox'];
+	var controlitems:Array<String> = ['controle destro', 'controle canhoto','teclado','custom', 'hitbox'];
 
 	var curSelected:Int = 0;
 
@@ -97,7 +97,7 @@ class CustomControlsState extends MusicBeatSubstate
 
 		// buttons
 
-		exitbutton = new FlxUIButton(FlxG.width - 650,25,"exit");
+		exitbutton = new FlxUIButton(FlxG.width - 650,25,"sair");
 		exitbutton.resize(125,50);
 		exitbutton.setLabelFormat("VCR OSD Mono",24,FlxColor.BLACK,"center");
 
@@ -108,13 +108,13 @@ class CustomControlsState extends MusicBeatSubstate
 		savebutton.resize(250,50);
 		savebutton.setLabelFormat("VCR OSD Mono",24,FlxColor.BLACK,"center");
 
-		exportbutton = new FlxUIButton(FlxG.width - 150, 25, "export", () -> { savetoclipboard(_pad); } );
+		exportbutton = new FlxUIButton(FlxG.width - 150, 25, "exportar", () -> { savetoclipboard(_pad); } );
 		exportbutton.resize(125,50);
 		exportbutton.setLabelFormat("VCR OSD Mono", 24, FlxColor.BLACK,"center");
 
-		importbutton = new FlxUIButton(exportbutton.x, 100, "import", () -> { loadfromclipboard(_pad); });
+		importbutton = new FlxUIButton(exportbutton.x, 100, "importar", () -> { loadfromclipboard(_pad); });
 		importbutton.resize(125,50);
-		importbutton.setLabelFormat("VCR OSD Mono", 24, FlxColor.BLACK,"center");
+		importbutton.setLabelFormat("VCR OSD Mono", 24, FlxColor.BLACK,"centralizar");
 
 		// add buttons
 		add(exitbutton);
